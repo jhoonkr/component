@@ -248,7 +248,7 @@
         $('.component_contents[data-ls]').each(function(index) {
             var compname = $(this).attr('data-ls');
             $(this).append('<div data-component="' + compname + '"></div>');
-            $(this).children('div[data-component]').include('/src/sona/' + compname + '.html');
+            $(this).children('div[data-component]').include('/component/src/sona/' + compname + '.html');
         });
         hljs.initHighlightingOnLoad(); // 코드 하이라이트
 
