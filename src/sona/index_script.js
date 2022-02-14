@@ -18,7 +18,7 @@ $(function() {
     var data_name,
         param_ls = getUrlParameter('p'),
         param_check = $('.container .aside .menu').find($('a[data-ls='+param_ls+']')).length,
-        file_name = "SN_component";
+        file_name = "index";
 
     if(param_ls != null) {
         if(param_check) {
