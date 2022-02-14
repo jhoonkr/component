@@ -9,7 +9,7 @@ var autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("sona", function (done) {
   gulp
-    .src("sona/scss/*.scss")
+    .src("./src/sona/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(
       sass({ sourcemap: true, outputStyle: "expanded" }).on(
@@ -25,13 +25,11 @@ gulp.task("sona", function (done) {
     )
     .pipe(cleancss({ format: "keep-breaks" }))
     .pipe(sourcemaps.write("./maps"))
-    .pipe(gulp.dest("./sona/css"));
+    .pipe(gulp.dest("./src/sona/css"));
   done();
 });
 
 gulp.task("sona:watch", function (done) {
-  gulp.watch("sona/scss/*.scss", gulp.series("sona"));
-  gulp.watch("sona/scss/common/*.scss", gulp.series("sona"));
-  gulp.watch("sona/scss/mixin/*.scss", gulp.series("sona"));
+  gulp.watch("./src/sona/scss/*.scss", gulp.series("sona"));
   done();
 });

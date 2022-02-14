@@ -8,7 +8,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    min-width: 30px; 
+    min-width: 30px;
     padding: 0 6px;
     border-radius: 4px;
     font-size: 14px;
@@ -198,8 +198,8 @@
         cursor:not-allowed;
       }
     }
-    &.c_blue.disabled, 
-    &.c_black.disabled, 
+    &.c_blue.disabled,
+    &.c_black.disabled,
     &.c_navy.disabled {
       input[disabled]:hover{
         .btn_skin {
@@ -243,8 +243,8 @@
     }
   }
 
-  &.c_blue, 
-  &.c_black, 
+  &.c_blue,
+  &.c_black,
   &.c_navy {
     &.disabled {
       &[disabled]:hover{
